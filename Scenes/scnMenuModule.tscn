@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://dprqoq7p2oay5"]
+
+[ext_resource type="Script" uid="uid://cukl6d3nqo3lv" path="res://Scripts/scrMenuModule.gd" id="1_1j81v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_md578"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.18, 0.16470002, 0.15300001, 0.9764706)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_1j81v"]
+font_size = 19
+
+[node name="MenuModule" type="Control" unique_id=1856089747]
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+offset_top = 9.0
+offset_bottom = 9.0
+script = ExtResource("1_1j81v")
+
+[node name="Panel" type="Panel" parent="." unique_id=1347088342]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 102.0
+offset_top = 160.0
+offset_right = 383.0
+offset_bottom = 462.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_md578")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel" unique_id=1963258804]
+layout_mode = 1
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 278.0
+offset_bottom = 297.0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Panel/ScrollContainer" unique_id=1437348042]
+layout_mode = 2
+columns = 4
+
+[node name="SystemName" type="Label" parent="." unique_id=473280360]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 148.0
+offset_top = 133.0
+offset_right = 323.0
+offset_bottom = 181.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+text = "Menu Making"
+label_settings = SubResource("LabelSettings_1j81v")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Done" type="Button" parent="." unique_id=1140141054]
+visible = false
+layout_mode = 0
+offset_left = 185.0
+offset_top = 423.0
+offset_right = 295.0
+offset_bottom = 454.0
+text = "Done"
+
+[connection signal="pressed" from="Done" to="." method="_on_done_pressed"]

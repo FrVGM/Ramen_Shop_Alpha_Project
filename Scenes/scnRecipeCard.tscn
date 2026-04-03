@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://dbplj7ssfr4x7"]
+
+[ext_resource type="Script" uid="uid://b0xtejve2ddiq" path="res://Scripts/scrRecipeCard.gd" id="1_4cybx"]
+[ext_resource type="Texture2D" uid="uid://b6bw4f1bn1ub4" path="res://Sprites/Ingredients/Ramen_Bowl_1.png" id="2_47c76"]
+[ext_resource type="Texture2D" uid="uid://b10xlhsp0pm48" path="res://Sprites/Ingredients/spr_Broth_1.png" id="3_0lq2y"]
+[ext_resource type="Texture2D" uid="uid://bgfpxadur166t" path="res://Sprites/Ingredients/spr_Noodles_1.png" id="4_q2dlc"]
+[ext_resource type="Texture2D" uid="uid://54amd5bie1lo" path="res://Sprites/Ingredients/spr_Veggie_1.png" id="5_4jlrw"]
+[ext_resource type="Texture2D" uid="uid://bvhjtwcs3a7jp" path="res://Sprites/Ingredients/spr_Egg_1.png" id="6_cp37r"]
+[ext_resource type="Texture2D" uid="uid://cyrgdldo61jh2" path="res://Sprites/Ingredients/spr_Topping_2.png" id="7_g0pck"]
+[ext_resource type="Texture2D" uid="uid://cr7hg158y8gfx" path="res://Sprites/Ingredients/spr_Topping_1.png" id="8_ahgvm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k1sw3"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.32, 0.26026666, 0.23040001, 0.79607844)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_k1sw3"]
+font_size = 9
+
+[sub_resource type="Theme" id="Theme_k1sw3"]
+default_font_size = 9
+
+[sub_resource type="LabelSettings" id="LabelSettings_y83bx"]
+font_size = 9
+
+[sub_resource type="Theme" id="Theme_y83bx"]
+default_font_size = 7
+
+[node name="PanelContainer" type="Panel" unique_id=840567907]
+custom_minimum_size = Vector2(50, 136)
+offset_right = 64.0
+offset_bottom = 136.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_k1sw3")
+script = ExtResource("1_4cybx")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=430615582]
+custom_minimum_size = Vector2(58.145, 131)
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 131.0
+
+[node name="RamenVisual" type="Control" parent="VBoxContainer" unique_id=844462602]
+custom_minimum_size = Vector2(46.13, 33.455)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Bowl" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=1886648753]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_47c76")
+centered = false
+
+[node name="Broth" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=1403298904]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_0lq2y")
+centered = false
+
+[node name="Noodles" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=1705889723]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_q2dlc")
+centered = false
+
+[node name="Veggie" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=2110411330]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_4jlrw")
+centered = false
+
+[node name="Egg" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=418756803]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("6_cp37r")
+centered = false
+
+[node name="Protein" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=1003390227]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("7_g0pck")
+centered = false
+
+[node name="Garnish" type="Sprite2D" parent="VBoxContainer/RamenVisual" unique_id=482290291]
+texture_filter = 1
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_ahgvm")
+centered = false
+
+[node name="LabelName" type="Label" parent="VBoxContainer" unique_id=986908651]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Juanito Ramen"
+label_settings = SubResource("LabelSettings_k1sw3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelCost" type="Label" parent="VBoxContainer" unique_id=1339366564]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Costo: 2¥"
+label_settings = SubResource("LabelSettings_k1sw3")
+horizontal_alignment = 1
+
+[node name="SpinBoxSale" type="SpinBox" parent="VBoxContainer" unique_id=1168074374]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_k1sw3")
+max_value = 1000000.0
+step = 25.0
+alignment = 1
+suffix = "¥"
+
+[node name="LabelProfit" type="Label" parent="VBoxContainer" unique_id=1962409744]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Profit: 100"
+label_settings = SubResource("LabelSettings_y83bx")
+horizontal_alignment = 1
+
+[node name="ButtonAdd" type="Button" parent="VBoxContainer" unique_id=1014856726]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_y83bx")
+text = "Add to Menu"
+
+[connection signal="pressed" from="VBoxContainer/ButtonAdd" to="." method="_on_button_add_pressed"]

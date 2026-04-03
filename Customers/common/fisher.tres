@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://bujk0x040bii2"]
+
+[ext_resource type="Script" uid="uid://kr82jwmmhouu" path="res://Scripts/scrCustomerData.gd" id="1_i8m52"]
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_jr0yo"]
+[ext_resource type="Resource" uid="uid://d1axjpfucu5xd" path="res://Ingredients/garnishNarutomaki.tres" id="2_r2fdu"]
+[ext_resource type="Resource" uid="uid://c7e0eogo1tmtq" path="res://Ingredients/brothTonkotsu.tres" id="3_xqy8w"]
+[ext_resource type="Texture2D" uid="uid://di5afnxr00yq1" path="res://Sprites/NPC/spr_Old.png" id="4_jr0yo"]
+[ext_resource type="Resource" uid="uid://dr3mv4icm30fx" path="res://Ingredients/noodlesThin.tres" id="4_wq6bn"]
+[ext_resource type="Resource" uid="uid://0mwmikmxexdw" path="res://Ingredients/brothShio.tres" id="5_hm7l2"]
+[ext_resource type="Resource" uid="uid://dttker8yn58v" path="res://Ingredients/brothMiso.tres" id="6_37g5g"]
+
+[resource]
+script = ExtResource("1_i8m52")
+customer_type = 1
+texture = ExtResource("4_jr0yo")
+budget = 600
+patience_ticks = 25
+favorites_hot = Array[ExtResource("1_jr0yo")]([ExtResource("2_r2fdu"), ExtResource("5_hm7l2"), ExtResource("4_wq6bn")])
+favorites_tempered = Array[ExtResource("1_jr0yo")]([ExtResource("2_r2fdu"), ExtResource("6_37g5g"), ExtResource("4_wq6bn")])
+favorites_cold = Array[ExtResource("1_jr0yo")]([ExtResource("2_r2fdu"), ExtResource("3_xqy8w"), ExtResource("4_wq6bn")])
+weight_taste = 0.9
+weight_speed = 0.7
+weight_price = 0.8
+weight_hygiene = 0.1
+metadata/_custom_type_script = "uid://kr82jwmmhouu"

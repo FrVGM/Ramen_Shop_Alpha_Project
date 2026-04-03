@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://dttker8yn58v"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_kud1d"]
+[ext_resource type="Texture2D" uid="uid://b10xlhsp0pm48" path="res://Sprites/Ingredients/spr_Broth_1.png" id="2_blgyp"]
+
+[resource]
+script = ExtResource("1_kud1d")
+name = "Miso"
+price = 60
+texture = ExtResource("2_blgyp")
+category = "Broth"
+thermal_density = 0.8
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

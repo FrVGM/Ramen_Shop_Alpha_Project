@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://bhgqd0rykp0pg"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_6lgqe"]
+[ext_resource type="Texture2D" uid="uid://b6bw4f1bn1ub4" path="res://Sprites/Ingredients/Ramen_Bowl_1.png" id="2_6lgqe"]
+
+[resource]
+script = ExtResource("1_6lgqe")
+name = "Red Bowl"
+price = 10
+texture = ExtResource("2_6lgqe")
+category = "Bowl"
+is_vegetarian = true
+thermal_density = 0.0
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

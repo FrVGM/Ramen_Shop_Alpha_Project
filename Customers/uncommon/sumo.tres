@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://b2wfiomuhyhps"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_fbt15"]
+[ext_resource type="Script" uid="uid://kr82jwmmhouu" path="res://Scripts/scrCustomerData.gd" id="1_ua2xc"]
+[ext_resource type="Resource" uid="uid://c2n3klxuhej2y" path="res://Ingredients/noodlesThick.tres" id="3_6lv5l"]
+[ext_resource type="Resource" uid="uid://pxpuy02ln7cl" path="res://Ingredients/proteinChashu.tres" id="3_nm7qs"]
+[ext_resource type="Resource" uid="uid://cgwx8vj72ebrh" path="res://Ingredients/eggMarinated.tres" id="4_5wgik"]
+[ext_resource type="Resource" uid="uid://c7e0eogo1tmtq" path="res://Ingredients/brothTonkotsu.tres" id="5_qm3vd"]
+[ext_resource type="Texture2D" uid="uid://82cbb2sq16jv" path="res://Sprites/NPC/spr_Sumo.png" id="7_3cmhy"]
+
+[resource]
+script = ExtResource("1_ua2xc")
+texture = ExtResource("7_3cmhy")
+rarity = "Uncommon"
+budget = 1800
+patience_ticks = 15
+eating_ticks = 6
+favorites_hot = Array[ExtResource("1_fbt15")]([ExtResource("3_nm7qs"), ExtResource("3_6lv5l"), ExtResource("4_5wgik")])
+favorites_tempered = Array[ExtResource("1_fbt15")]([ExtResource("3_nm7qs"), ExtResource("3_6lv5l"), ExtResource("4_5wgik"), ExtResource("5_qm3vd")])
+favorites_cold = Array[ExtResource("1_fbt15")]([ExtResource("3_nm7qs"), ExtResource("3_6lv5l"), ExtResource("4_5wgik"), ExtResource("5_qm3vd")])
+weight_taste = 1.0
+weight_speed = 0.7
+weight_price = 0.2
+weight_hygiene = 0.0
+metadata/_custom_type_script = "uid://kr82jwmmhouu"

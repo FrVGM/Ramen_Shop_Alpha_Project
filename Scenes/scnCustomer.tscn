@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://cilv13iq8k882"]
+
+[ext_resource type="Script" uid="uid://d2xx6grrys12m" path="res://Scripts/scrCustomer.gd" id="1_bcvso"]
+[ext_resource type="Texture2D" uid="uid://da1lx6jto364h" path="res://Sprites/NPC/spr_Man.png" id="2_6un0b"]
+[ext_resource type="StyleBox" uid="uid://cx85uy7mnx8sh" path="res://Resources/WhiteGlobe.tres" id="3_op0ug"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g5o5w"]
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_tn8s4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rp783"]
+font_size = 20
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5o5w"]
+size = Vector2(28, 40)
+
+[node name="Cliente" type="Area2D" unique_id=1041090267 groups=["Customer", "DinnerCustomer"]]
+z_index = 5
+collision_mask = 256
+script = ExtResource("1_bcvso")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1923877609]
+texture_filter = 1
+position = Vector2(0, -21)
+scale = Vector2(2, 2)
+texture = ExtResource("2_6un0b")
+
+[node name="Label" type="Label" parent="." unique_id=193766444]
+offset_left = -19.0
+offset_top = -63.0
+offset_right = 21.0
+offset_bottom = -40.0
+text = "Farmer"
+label_settings = SubResource("LabelSettings_g5o5w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelPuntos" type="Label" parent="." unique_id=1100364042]
+visible = false
+z_index = 9
+z_as_relative = false
+offset_left = -18.0
+offset_top = -73.0
+offset_right = 20.0
+offset_bottom = -50.0
+text = "3.0★"
+label_settings = SubResource("LabelSettings_tn8s4")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextGlobe" type="Control" parent="." unique_id=1126742294]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -98.0
+offset_right = 20.0
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="Panel" parent="TextGlobe" unique_id=1615469179]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -16.5
+offset_right = 17.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("3_op0ug")
+
+[node name="Texto" type="Label" parent="TextGlobe/Text" unique_id=802848924]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -22.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "🤗"
+label_settings = SubResource("LabelSettings_rp783")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IconoVisual" type="Sprite2D" parent="TextGlobe/Text" unique_id=1218607010]
+position = Vector2(17, 16.5)
+scale = Vector2(0.5, 0.5)
+
+[node name="Arrow" type="Control" parent="TextGlobe" unique_id=520572222]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = 16.75
+offset_right = 17.0
+offset_bottom = 23.25
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TextGlobe/Arrow" unique_id=372913812]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -8.999996
+offset_right = 8.0
+offset_bottom = -0.9999962
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.7853982
+theme_override_styles/panel = ExtResource("3_op0ug")
+
+[node name="TextGlobeTimer" type="Timer" parent="." unique_id=1129762648]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1969590509]
+position = Vector2(0, -18)
+shape = SubResource("RectangleShape2D_g5o5w")
+
+[connection signal="timeout" from="TextGlobeTimer" to="." method="_on_timer_timeout"]

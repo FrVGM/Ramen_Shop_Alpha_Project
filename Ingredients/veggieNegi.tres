@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://dqnro8vv3fg6p"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_dq64x"]
+[ext_resource type="Texture2D" uid="uid://54amd5bie1lo" path="res://Sprites/Ingredients/spr_Veggie_1.png" id="2_dq64x"]
+
+[resource]
+script = ExtResource("1_dq64x")
+name = "Negi"
+price = 20
+texture = ExtResource("2_dq64x")
+category = "Veggie"
+is_vegetarian = true
+thermal_density = 0.3
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

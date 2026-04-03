@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://c5gfcgdpyebgt"]
+
+[ext_resource type="Script" uid="uid://dvtohg6fdxymw" path="res://Scripts/scrIngredientCard.gd" id="1_gn3sv"]
+[ext_resource type="Texture2D" uid="uid://b10xlhsp0pm48" path="res://Sprites/Ingredients/spr_Broth_1.png" id="2_4v4o8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nbvfs"]
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_tcdk8"]
+font_size = 12
+
+[node name="VBoxContainer" type="VBoxContainer" unique_id=501555017]
+script = ExtResource("1_gn3sv")
+
+[node name="NameLabel" type="Label" parent="." unique_id=705349154]
+layout_mode = 2
+text = "Broth"
+label_settings = SubResource("LabelSettings_nbvfs")
+horizontal_alignment = 1
+clip_text = true
+
+[node name="btnContainer" type="Button" parent="." unique_id=1997536772]
+layout_mode = 2
+theme_override_icons/icon = ExtResource("2_4v4o8")
+icon = ExtResource("2_4v4o8")
+icon_alignment = 1
+
+[node name="CostLabel" type="Label" parent="." unique_id=1376844140]
+layout_mode = 2
+text = "Cost: 1¥"
+label_settings = SubResource("LabelSettings_tcdk8")
+horizontal_alignment = 1

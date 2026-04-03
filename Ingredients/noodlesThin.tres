@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://dr3mv4icm30fx"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_doktk"]
+[ext_resource type="Texture2D" uid="uid://bgfpxadur166t" path="res://Sprites/Ingredients/spr_Noodles_1.png" id="2_doktk"]
+
+[resource]
+script = ExtResource("1_doktk")
+name = "Thin"
+price = 40
+texture = ExtResource("2_doktk")
+category = "Noodles"
+is_vegetarian = true
+thermal_density = 0.4
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://c2n3klxuhej2y"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_c5ruh"]
+[ext_resource type="Texture2D" uid="uid://xxcd4jsfwfy2" path="res://Sprites/Ingredients/spr_Noodles_2.png" id="2_c5ruh"]
+
+[resource]
+script = ExtResource("1_c5ruh")
+name = "Thick"
+price = 60
+texture = ExtResource("2_c5ruh")
+category = "Noodles"
+is_vegetarian = true
+thermal_density = 0.4
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

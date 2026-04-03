@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://dh6kkrb8rllle"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_82j1a"]
+[ext_resource type="Script" uid="uid://kr82jwmmhouu" path="res://Scripts/scrCustomerData.gd" id="1_k3no7"]
+[ext_resource type="Resource" uid="uid://cgwx8vj72ebrh" path="res://Ingredients/eggMarinated.tres" id="2_82j1a"]
+[ext_resource type="Resource" uid="uid://c2n3klxuhej2y" path="res://Ingredients/noodlesThick.tres" id="3_73gra"]
+[ext_resource type="Resource" uid="uid://c7e0eogo1tmtq" path="res://Ingredients/brothTonkotsu.tres" id="4_4uxfy"]
+[ext_resource type="Texture2D" uid="uid://bpxrl46258p56" path="res://Sprites/NPC/spr_Miner.png" id="5_82j1a"]
+[ext_resource type="Resource" uid="uid://dttker8yn58v" path="res://Ingredients/brothMiso.tres" id="5_dx55r"]
+
+[resource]
+script = ExtResource("1_k3no7")
+customer_type = 2
+texture = ExtResource("5_82j1a")
+patience_ticks = 30
+favorites_hot = Array[ExtResource("1_82j1a")]([ExtResource("2_82j1a"), ExtResource("3_73gra")])
+favorites_tempered = Array[ExtResource("1_82j1a")]([ExtResource("2_82j1a"), ExtResource("3_73gra"), ExtResource("5_dx55r")])
+favorites_cold = Array[ExtResource("1_82j1a")]([ExtResource("2_82j1a"), ExtResource("3_73gra"), ExtResource("4_4uxfy")])
+weight_taste = 1.0
+weight_speed = 0.7
+weight_hygiene = 0.2
+metadata/_custom_type_script = "uid://kr82jwmmhouu"

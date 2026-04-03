@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://c7e0eogo1tmtq"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_8m15v"]
+[ext_resource type="Texture2D" uid="uid://f8il5cycwl1" path="res://Sprites/Ingredients/spr_Broth_2.png" id="2_syyw6"]
+
+[resource]
+script = ExtResource("1_8m15v")
+name = "Tonkotsu"
+price = 100
+texture = ExtResource("2_syyw6")
+category = "Broth"
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

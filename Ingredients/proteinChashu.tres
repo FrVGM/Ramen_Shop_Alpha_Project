@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://pxpuy02ln7cl"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_atj7i"]
+[ext_resource type="Texture2D" uid="uid://cyrgdldo61jh2" path="res://Sprites/Ingredients/spr_Topping_2.png" id="2_o4o0k"]
+
+[resource]
+script = ExtResource("1_atj7i")
+name = "Chashu"
+price = 100
+texture = ExtResource("2_o4o0k")
+category = "Protein"
+thermal_density = 0.6
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

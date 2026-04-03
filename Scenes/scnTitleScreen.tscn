@@ -1,0 +1,306 @@
+[gd_scene format=3 uid="uid://q2gdtwcyoj0j"]
+
+[ext_resource type="Script" uid="uid://bjsbtb4k6h4ai" path="res://Scripts/scrTitleScreen.gd" id="1_ubehk"]
+[ext_resource type="StyleBox" uid="uid://belfiyevys5qu" path="res://Resources/defaultStyle.tres" id="2_gsnfn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_oexb5"]
+font_size = 34
+font_color = Color(0.9324808, 0.74797696, 0.42357656, 1)
+outline_size = 4
+outline_color = Color(0.4529788, 0.25436616, 0.076620854, 1)
+shadow_size = 5
+shadow_color = Color(0.67, 0.41316667, 0, 1)
+
+[node name="TitleScreen" type="Control" unique_id=334073707]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ubehk")
+
+[node name="Title" type="Label" parent="." unique_id=1125938201]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -142.0
+offset_top = 27.0
+offset_right = 152.0
+offset_bottom = 74.0
+grow_horizontal = 2
+text = "Kotodama Ramen"
+label_settings = SubResource("LabelSettings_oexb5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Options" type="VBoxContainer" parent="." unique_id=2016936812]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -33.0
+offset_right = 48.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnLoadGame" type="Button" parent="Options" unique_id=1713558100]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gsnfn")
+text = "Load Game"
+
+[node name="btnNewGame" type="Button" parent="Options" unique_id=909548263]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = ExtResource("2_gsnfn")
+text = "▶️"
+
+[node name="btnSettings" type="Button" parent="." unique_id=751325855]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 422.0
+offset_right = 469.0
+offset_bottom = 475.0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("2_gsnfn")
+text = "⚙️"
+
+[node name="btnClose" type="Button" parent="." unique_id=126916295]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 423.0
+offset_right = 58.0
+offset_bottom = 472.0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("2_gsnfn")
+text = "💨"
+
+[node name="DeleteGame" type="Button" parent="." unique_id=791164531]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 423.0
+offset_right = 267.0
+offset_bottom = 472.0
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("2_gsnfn")
+text = "💾🗑️"
+
+[node name="YourName" type="Panel" parent="." unique_id=1836120674]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = -54.5
+offset_right = 84.5
+offset_bottom = 54.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gsnfn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="YourName" unique_id=1201832666]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 8.0
+offset_right = 162.0
+offset_bottom = 101.0
+
+[node name="lblYourName" type="Label" parent="YourName/VBoxContainer" unique_id=1259579782]
+layout_mode = 2
+text = "What's your name?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="YourName/VBoxContainer" unique_id=1834265540]
+layout_mode = 2
+placeholder_text = "Player"
+alignment = 1
+
+[node name="btnStart" type="Button" parent="YourName/VBoxContainer" unique_id=1737051152]
+layout_mode = 2
+text = "Start"
+
+[node name="NewGame" type="Panel" parent="." unique_id=295084229]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -112.25
+offset_top = -80.25
+offset_right = 112.25
+offset_bottom = 80.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gsnfn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NewGame" unique_id=60720228]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 8.0
+offset_right = 162.0
+offset_bottom = 101.0
+
+[node name="lblYourName" type="Label" parent="NewGame/VBoxContainer" unique_id=1968790952]
+layout_mode = 2
+text = "Are you sure you want to
+start a new game?
+You will lose your progress."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnYes" type="Button" parent="NewGame/VBoxContainer" unique_id=1915314527]
+layout_mode = 2
+text = "Yes"
+
+[node name="btnNo" type="Button" parent="NewGame/VBoxContainer" unique_id=1214909493]
+layout_mode = 2
+text = "No
+"
+
+[node name="Settings" type="Panel" parent="." unique_id=689800560]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.75
+offset_top = -155.0
+offset_right = 105.75
+offset_bottom = 159.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gsnfn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Settings" unique_id=374568490]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -54.5
+offset_top = 11.0
+offset_right = 54.5
+offset_bottom = 255.0
+grow_horizontal = 2
+
+[node name="lblResolution" type="Label" parent="Settings/VBoxContainer" unique_id=1069475363]
+layout_mode = 2
+text = "Resolution"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnResolution" type="Button" parent="Settings/VBoxContainer" unique_id=1223089493]
+layout_mode = 2
+text = "Windowed"
+
+[node name="lblLanguage" type="Label" parent="Settings/VBoxContainer" unique_id=150759557]
+layout_mode = 2
+text = "Language"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="btnLanguage" type="Button" parent="Settings/VBoxContainer" unique_id=1649481945]
+layout_mode = 2
+text = "English"
+
+[node name="lblMusicVolume" type="Label" parent="Settings/VBoxContainer" unique_id=51569748]
+layout_mode = 2
+text = "Music Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Settings/VBoxContainer" unique_id=1986941341]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="btnM-" type="Button" parent="Settings/VBoxContainer/HBoxContainer2" unique_id=1097611127]
+layout_mode = 2
+text = "-"
+
+[node name="MusicProgress" type="ProgressBar" parent="Settings/VBoxContainer/HBoxContainer2" unique_id=1344639158]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+max_value = 1.0
+
+[node name="btnM+" type="Button" parent="Settings/VBoxContainer/HBoxContainer2" unique_id=2010181052]
+layout_mode = 2
+text = "+"
+
+[node name="lblSFXVolume" type="Label" parent="Settings/VBoxContainer" unique_id=557866872]
+layout_mode = 2
+text = "SFX Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Settings/VBoxContainer" unique_id=2018532286]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="btnSFX-" type="Button" parent="Settings/VBoxContainer/HBoxContainer" unique_id=1516243130]
+layout_mode = 2
+text = "-"
+
+[node name="SFXProgress" type="ProgressBar" parent="Settings/VBoxContainer/HBoxContainer" unique_id=899081323]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+max_value = 1.0
+
+[node name="btnSFX+" type="Button" parent="Settings/VBoxContainer/HBoxContainer" unique_id=1040129308]
+layout_mode = 2
+text = "+"
+
+[node name="btnQuit" type="Button" parent="Settings" unique_id=1676643571]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.25
+offset_top = -44.0
+offset_right = 31.25
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Quit"
+
+[node name="btnSave" type="Button" parent="." unique_id=1582670704]
+visible = false
+layout_mode = 0
+offset_left = 215.0
+offset_top = 418.0
+offset_right = 264.0
+offset_bottom = 471.0
+theme_override_font_sizes/font_size = 32
+text = "💾"
+
+[connection signal="pressed" from="Options/btnLoadGame" to="." method="_on_btn_load_game_pressed"]
+[connection signal="pressed" from="Options/btnNewGame" to="." method="_on_btn_new_game_pressed"]
+[connection signal="pressed" from="btnSettings" to="." method="_on_btn_settings_pressed"]
+[connection signal="pressed" from="btnClose" to="." method="_on_btn_close_pressed"]
+[connection signal="pressed" from="DeleteGame" to="." method="_on_delete_game_pressed"]
+[connection signal="text_changed" from="YourName/VBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="text_submitted" from="YourName/VBoxContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="YourName/VBoxContainer/btnStart" to="." method="_on_btn_start_pressed"]
+[connection signal="pressed" from="NewGame/VBoxContainer/btnYes" to="." method="_on_btn_yes_pressed"]
+[connection signal="pressed" from="NewGame/VBoxContainer/btnNo" to="." method="_on_btn_no_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/btnResolution" to="." method="_on_btn_resolution_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/btnLanguage" to="." method="_on_btn_language_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/HBoxContainer2/btnM-" to="." method="_on_btn_m_minus_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/HBoxContainer2/btnM+" to="." method="_on_btn_m_plus_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/HBoxContainer/btnSFX-" to="." method="_on_btn_sfx_minus_pressed"]
+[connection signal="pressed" from="Settings/VBoxContainer/HBoxContainer/btnSFX+" to="." method="_on_btn_sfx_plus_pressed"]
+[connection signal="pressed" from="Settings/btnQuit" to="." method="_on_btn_quit_pressed"]

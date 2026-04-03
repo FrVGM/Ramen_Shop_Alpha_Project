@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="RecetaResource" format=3 uid="uid://ce22aid2lonvd"]
+
+[ext_resource type="Resource" uid="uid://dttker8yn58v" path="res://Ingredients/brothMiso.tres" id="1_0hlbr"]
+[ext_resource type="Resource" uid="uid://dr3mv4icm30fx" path="res://Ingredients/noodlesThin.tres" id="2_khue5"]
+[ext_resource type="Resource" uid="uid://b5niri60cofue" path="res://Ingredients/eggNormal.tres" id="3_t6bji"]
+[ext_resource type="Script" uid="uid://cnv7fm64deiou" path="res://Scripts/scrRecipeResource.gd" id="4_fvhta"]
+
+[resource]
+script = ExtResource("4_fvhta")
+nombre_receta = "Full of Water"
+ingredientes = {
+"Broth": ExtResource("1_0hlbr"),
+"Egg": ExtResource("3_t6bji"),
+"Garnish": null,
+"Noodles": ExtResource("2_khue5"),
+"Topping": null,
+"Veggie": null
+}

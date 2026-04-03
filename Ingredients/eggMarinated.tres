@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://cgwx8vj72ebrh"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_lm24y"]
+[ext_resource type="Texture2D" uid="uid://lfqpu18uupsn" path="res://Sprites/Ingredients/spr_Egg_2.png" id="2_lm24y"]
+
+[resource]
+script = ExtResource("1_lm24y")
+name = "Marinated"
+price = 25
+texture = ExtResource("2_lm24y")
+category = "Egg"
+thermal_density = 0.6
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

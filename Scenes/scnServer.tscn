@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bppxxypilrl1t"]
+
+[ext_resource type="Script" uid="uid://bmumaoh6gbiro" path="res://Scripts/scrServer.gd" id="1_cfyf5"]
+[ext_resource type="Texture2D" uid="uid://cmdb4qias0j31" path="res://Sprites/NPC/spr_Server.png" id="2_cfyf5"]
+
+[node name="Server" type="Node2D" unique_id=982481933]
+z_index = 6
+script = ExtResource("1_cfyf5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1663124891]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_cfyf5")

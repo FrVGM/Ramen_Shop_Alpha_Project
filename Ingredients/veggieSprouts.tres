@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://b8bvscxj5fpht"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_746np"]
+[ext_resource type="Texture2D" uid="uid://bp6g5pg0tnnv5" path="res://Sprites/Ingredients/spr_Veggie_2.png" id="2_746np"]
+
+[resource]
+script = ExtResource("1_746np")
+name = "Sprouts"
+price = 20
+texture = ExtResource("2_746np")
+category = "Veggie"
+is_vegetarian = true
+thermal_density = 0.3
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

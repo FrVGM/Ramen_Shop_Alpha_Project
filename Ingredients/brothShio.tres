@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Ingredient" format=3 uid="uid://0mwmikmxexdw"]
+
+[ext_resource type="Script" uid="uid://blgcukp8p6l5y" path="res://Scripts/scrIngredient.gd" id="1_54f5m"]
+[ext_resource type="Texture2D" uid="uid://bsfovy2d6dn2y" path="res://Sprites/Ingredients/spr_Broth_3.png" id="2_54f5m"]
+
+[resource]
+script = ExtResource("1_54f5m")
+name = "Shio"
+price = 75
+texture = ExtResource("2_54f5m")
+category = "Broth"
+metadata/_custom_type_script = "uid://blgcukp8p6l5y"

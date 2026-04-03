@@ -1,0 +1,537 @@
+[gd_scene format=3 uid="uid://dw04n8yexbrhc"]
+
+[ext_resource type="Script" uid="uid://dk7uyj1hetbmo" path="res://Scripts/scr_v_box_container.gd" id="1_q5ytr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4uhxe"]
+font_size = 25
+
+[sub_resource type="DPITexture" id="DPITexture_4uhxe"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#fefefe\" fill-opacity=\".75\"/></svg>
+"
+base_scale = 1.5
+
+[sub_resource type="DPITexture" id="DPITexture_q5ytr"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#fefefe\"/></svg>
+"
+base_scale = 1.5
+
+[sub_resource type="DPITexture" id="DPITexture_6ynos"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><circle cx=\"8\" cy=\"8\" r=\"7\" fill=\"#fefefe\" fill-opacity=\".37\"/></svg>
+"
+base_scale = 1.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uhxe"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q5ytr"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 0, 0, 0.41960785)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ynos"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(1, 0, 0, 0.8235294)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opcl6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 1, 0, 0.41960785)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2hqjv"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 1, 0, 0.8235294)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4s46i"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_12nmv"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 1, 0.41960785)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_raidu"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 1, 0.8235294)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+corner_detail = 6
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_q5ytr"]
+font_size = 12
+font_color = Color(0.62967473, 0.62967485, 0.62967455, 1)
+
+[node name="Main" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -182.0
+offset_right = 182.0
+offset_bottom = 182.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -80.5
+offset_top = -44.0
+offset_right = 82.5
+offset_bottom = -9.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+text = "Broth Making"
+label_settings = SubResource("LabelSettings_4uhxe")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.5
+offset_top = -182.5
+offset_right = 186.5
+offset_bottom = 181.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+script = ExtResource("1_q5ytr")
+suffix = "°"
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Fire
+     Intensity     "
+horizontal_alignment = 1
+
+[node name="VSlider" type="VSlider" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+theme_override_icons/grabber = SubResource("DPITexture_4uhxe")
+theme_override_icons/grabber_highlight = SubResource("DPITexture_q5ytr")
+theme_override_icons/grabber_disabled = SubResource("DPITexture_6ynos")
+theme_override_styles/slider = SubResource("StyleBoxFlat_4uhxe")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_q5ytr")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_6ynos")
+min_value = 70.0
+value = 85.0
+tick_count = 7
+ticks_on_borders = true
+
+[node name="PriceLabel" type="Label" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Cost: 49¥"
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+script = ExtResource("1_q5ytr")
+costo_por_punto = 12.0
+suffix = " hrs"
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "      Cooking       
+Time"
+horizontal_alignment = 1
+
+[node name="VSlider" type="VSlider" parent="Control/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+theme_override_icons/grabber = SubResource("DPITexture_4uhxe")
+theme_override_icons/grabber_highlight = SubResource("DPITexture_q5ytr")
+theme_override_icons/grabber_disabled = SubResource("DPITexture_6ynos")
+theme_override_styles/slider = SubResource("StyleBoxFlat_4uhxe")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_opcl6")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_2hqjv")
+min_value = 1.0
+max_value = 10.0
+step = 0.5
+value = 5.5
+tick_count = 7
+ticks_on_borders = true
+
+[node name="PriceLabel" type="Label" parent="Control/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Cost: 12¥"
+horizontal_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+script = ExtResource("1_q5ytr")
+costo_por_punto = 1.0
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Ingredient/Water
+Ratio"
+horizontal_alignment = 1
+
+[node name="VSlider" type="VSlider" parent="Control/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 1
+size_flags_vertical = 3
+theme_override_icons/grabber = SubResource("DPITexture_4uhxe")
+theme_override_icons/grabber_highlight = SubResource("DPITexture_q5ytr")
+theme_override_icons/grabber_disabled = SubResource("DPITexture_6ynos")
+theme_override_styles/slider = SubResource("StyleBoxFlat_4s46i")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_12nmv")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxFlat_raidu")
+min_value = 10.0
+value = 55.0
+tick_count = 7
+ticks_on_borders = true
+
+[node name="PriceLabel" type="Label" parent="Control/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Cost: 50¥"
+horizontal_alignment = 1
+
+[node name="NotePopUp" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 187.0
+offset_right = 361.0
+offset_bottom = 210.0
+text = "50%"
+label_settings = SubResource("LabelSettings_q5ytr")
+
+[node name="SliderNotes" type="Control" parent="Control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Note1" type="Label" parent="Control/SliderNotes"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 56.0
+offset_right = 114.0
+offset_bottom = 79.0
+text = "100°"
+label_settings = SubResource("LabelSettings_q5ytr")
+
+[node name="Note2" type="Label" parent="Control/SliderNotes"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 97.0
+offset_right = 112.0
+offset_bottom = 120.0
+text = "95°"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note3" type="Label" parent="Control/SliderNotes"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 139.0
+offset_right = 112.0
+offset_bottom = 162.0
+text = "90°"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note4" type="Label" parent="Control/SliderNotes"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 184.0
+offset_right = 114.0
+offset_bottom = 207.0
+text = "85°"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note5" type="Label" parent="Control/SliderNotes"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 227.0
+offset_right = 112.0
+offset_bottom = 250.0
+text = "80°"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note6" type="Label" parent="Control/SliderNotes"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 270.0
+offset_right = 112.0
+offset_bottom = 293.0
+text = "75°"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note7" type="Label" parent="Control/SliderNotes"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 315.0
+offset_right = 114.0
+offset_bottom = 338.0
+text = "70°"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="SliderNotes2" type="Control" parent="Control"]
+anchors_preset = 0
+offset_left = 119.0
+offset_right = 159.0
+offset_bottom = 40.0
+
+[node name="Note1" type="Label" parent="Control/SliderNotes2"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 56.0
+offset_right = 113.0
+offset_bottom = 79.0
+text = "10 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+
+[node name="Note2" type="Label" parent="Control/SliderNotes2"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 97.0
+offset_right = 112.0
+offset_bottom = 120.0
+text = "8 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note3" type="Label" parent="Control/SliderNotes2"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 139.0
+offset_right = 112.0
+offset_bottom = 162.0
+text = "6 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note4" type="Label" parent="Control/SliderNotes2"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 184.0
+offset_right = 113.0
+offset_bottom = 207.0
+text = "5 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note5" type="Label" parent="Control/SliderNotes2"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 227.0
+offset_right = 112.0
+offset_bottom = 250.0
+text = "4 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note6" type="Label" parent="Control/SliderNotes2"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 270.0
+offset_right = 112.0
+offset_bottom = 293.0
+text = "2 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note7" type="Label" parent="Control/SliderNotes2"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 315.0
+offset_right = 113.0
+offset_bottom = 338.0
+text = "1 hrs"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="SliderNotes3" type="Control" parent="Control"]
+anchors_preset = 0
+offset_left = 249.0
+offset_right = 289.0
+offset_bottom = 40.0
+
+[node name="Note1" type="Label" parent="Control/SliderNotes3"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 56.0
+offset_right = 111.0
+offset_bottom = 79.0
+text = "100%"
+label_settings = SubResource("LabelSettings_q5ytr")
+
+[node name="Note2" type="Label" parent="Control/SliderNotes3"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 97.0
+offset_right = 112.0
+offset_bottom = 120.0
+text = "85%"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note3" type="Label" parent="Control/SliderNotes3"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 139.0
+offset_right = 112.0
+offset_bottom = 162.0
+text = "60%"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note4" type="Label" parent="Control/SliderNotes3"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 184.0
+offset_right = 112.0
+offset_bottom = 207.0
+text = "55%"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note5" type="Label" parent="Control/SliderNotes3"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 227.0
+offset_right = 112.0
+offset_bottom = 250.0
+text = "40%"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note6" type="Label" parent="Control/SliderNotes3"]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 270.0
+offset_right = 112.0
+offset_bottom = 293.0
+text = "25%"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[node name="Note7" type="Label" parent="Control/SliderNotes3"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 314.0
+offset_right = 112.0
+offset_bottom = 337.0
+text = "10%"
+label_settings = SubResource("LabelSettings_q5ytr")
+vertical_alignment = 1
+
+[connection signal="drag_ended" from="Control/HBoxContainer/VBoxContainer/VSlider" to="Control/HBoxContainer/VBoxContainer" method="_on_v_slider_drag_ended"]
+[connection signal="drag_started" from="Control/HBoxContainer/VBoxContainer/VSlider" to="Control/HBoxContainer/VBoxContainer" method="_on_v_slider_drag_started"]
+[connection signal="value_changed" from="Control/HBoxContainer/VBoxContainer/VSlider" to="Control/HBoxContainer/VBoxContainer" method="_on_v_slider_value_changed"]
+[connection signal="drag_ended" from="Control/HBoxContainer/VBoxContainer2/VSlider" to="Control/HBoxContainer/VBoxContainer2" method="_on_v_slider_drag_ended"]
+[connection signal="drag_started" from="Control/HBoxContainer/VBoxContainer2/VSlider" to="Control/HBoxContainer/VBoxContainer2" method="_on_v_slider_drag_started"]
+[connection signal="value_changed" from="Control/HBoxContainer/VBoxContainer2/VSlider" to="Control/HBoxContainer/VBoxContainer2" method="_on_v_slider_value_changed"]
+[connection signal="drag_ended" from="Control/HBoxContainer/VBoxContainer3/VSlider" to="Control/HBoxContainer/VBoxContainer3" method="_on_v_slider_drag_ended"]
+[connection signal="drag_started" from="Control/HBoxContainer/VBoxContainer3/VSlider" to="Control/HBoxContainer/VBoxContainer3" method="_on_v_slider_drag_started"]
+[connection signal="value_changed" from="Control/HBoxContainer/VBoxContainer3/VSlider" to="Control/HBoxContainer/VBoxContainer3" method="_on_v_slider_value_changed"]

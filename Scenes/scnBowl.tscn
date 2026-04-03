@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b1vfwiqsclhn5"]
+
+[ext_resource type="Texture2D" uid="uid://cgghngf6yq04s" path="res://Sprites/spr_Bowl_OV.png" id="1_kpnbl"]
+
+[node name="Node2D" type="Node2D" unique_id=1148451567]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1363762523]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_kpnbl")

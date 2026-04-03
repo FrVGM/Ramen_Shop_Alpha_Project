@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://b0ju4ink2pkfd"]
+
+[ext_resource type="Script" uid="uid://7h3137fw0lue" path="res://Scripts/scrHostess.gd" id="1_l48d5"]
+[ext_resource type="Texture2D" uid="uid://b5b64h23ohn2l" path="res://Sprites/NPC/spr_Hostess.png" id="2_tdsar"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_l48d5"]
+font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tdsar"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_detail = 5
+
+[node name="Hostess" type="Node2D" unique_id=982481933]
+script = ExtResource("1_l48d5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1663124891]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_tdsar")
+
+[node name="TextGlobe" type="Control" parent="." unique_id=1449212034]
+visible = false
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -66.0
+offset_right = 20.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="Panel" parent="TextGlobe" unique_id=31893819]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -16.5
+offset_right = 17.0
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Texto" type="Label" parent="TextGlobe/Text" unique_id=1172551882]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -22.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "🤗"
+label_settings = SubResource("LabelSettings_l48d5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Arrow" type="Control" parent="TextGlobe" unique_id=1541383008]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = 16.75
+offset_right = 17.0
+offset_bottom = 23.25
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TextGlobe/Arrow" unique_id=1965822166]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -8.999996
+offset_right = 8.0
+offset_bottom = -0.9999962
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.7853982
+theme_override_styles/panel = SubResource("StyleBoxFlat_tdsar")
+
+[node name="Timer" type="Timer" parent="." unique_id=29545037]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

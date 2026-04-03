@@ -1,0 +1,380 @@
+[gd_scene format=3 uid="uid://cuto11fjl5foq"]
+
+[ext_resource type="Script" uid="uid://l67omi3xtbr1" path="res://Scripts/scrRecipeModule.gd" id="1_mmi40"]
+[ext_resource type="StyleBox" uid="uid://p41f2xiur5go" path="res://Resources/tabStyle.tres" id="2_gn2fn"]
+[ext_resource type="Texture2D" uid="uid://b6bw4f1bn1ub4" path="res://Sprites/Ingredients/Ramen_Bowl_1.png" id="3_2p410"]
+[ext_resource type="Texture2D" uid="uid://b10xlhsp0pm48" path="res://Sprites/Ingredients/spr_Broth_1.png" id="4_jjtkn"]
+[ext_resource type="Texture2D" uid="uid://bgfpxadur166t" path="res://Sprites/Ingredients/spr_Noodles_1.png" id="5_dsn8o"]
+[ext_resource type="Texture2D" uid="uid://54amd5bie1lo" path="res://Sprites/Ingredients/spr_Veggie_1.png" id="6_3fpsr"]
+[ext_resource type="Texture2D" uid="uid://bvhjtwcs3a7jp" path="res://Sprites/Ingredients/spr_Egg_1.png" id="7_a3jcs"]
+[ext_resource type="Texture2D" uid="uid://cyrgdldo61jh2" path="res://Sprites/Ingredients/spr_Topping_2.png" id="8_cg688"]
+[ext_resource type="Texture2D" uid="uid://cr7hg158y8gfx" path="res://Sprites/Ingredients/spr_Topping_1.png" id="9_f0fqn"]
+[ext_resource type="StyleBox" uid="uid://b2lxikonpf2nq" path="res://Resources/darktabStyle.tres" id="10_agwki"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yh4ib"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.11537697, 0.10513633, 0.052903615, 0.8)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g8jay"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="LabelSettings" id="LabelSettings_mbgkp"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_crfqp"]
+font_size = 14
+
+[sub_resource type="LabelSettings" id="LabelSettings_ft1cc"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_0e0cb"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_bwih2"]
+font_size = 12
+
+[node name="RecipeModule" type="Control" unique_id=1719157662]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 100.0
+offset_bottom = 102.95996
+script = ExtResource("1_mmi40")
+
+[node name="Panel" type="Panel" parent="." unique_id=244117341]
+layout_mode = 1
+offset_left = 6.0
+offset_top = 9.0
+offset_right = 475.0
+offset_bottom = 293.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yh4ib")
+
+[node name="FlowContainer" type="FlowContainer" parent="." unique_id=1263604240]
+layout_mode = 1
+offset_left = 13.000003
+offset_top = 11.0
+offset_right = 406.0
+offset_bottom = 251.0
+scale = Vector2(1.16, 1.16)
+
+[node name="HFlowContainer" type="HFlowContainer" parent="FlowContainer" unique_id=2121301443]
+layout_mode = 2
+
+[node name="SideTabs" type="Panel" parent="FlowContainer/HFlowContainer" unique_id=139518462]
+custom_minimum_size = Vector2(44, 240)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_g8jay")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FlowContainer/HFlowContainer/SideTabs" unique_id=1490615193]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 2.0
+offset_right = 74.0
+offset_bottom = 411.0
+scale = Vector2(0.58, 0.58)
+
+[node name="tab_Bowl" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=1248222104]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("3_2p410")
+
+[node name="tab_Broth" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=1815419542]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("4_jjtkn")
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="tab_Noodles" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=341102609]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("5_dsn8o")
+
+[node name="tab_Veggie" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=1217605822]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("6_3fpsr")
+
+[node name="tab_Egg" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=913330254]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("7_a3jcs")
+
+[node name="tab_Protein" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=2116374650]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("8_cg688")
+
+[node name="tab_Garnish" type="Button" parent="FlowContainer/HFlowContainer/SideTabs/VBoxContainer" unique_id=766345060]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_styles/normal = ExtResource("2_gn2fn")
+icon = ExtResource("9_f0fqn")
+
+[node name="VFlowContainer" type="VFlowContainer" parent="FlowContainer" unique_id=248906444]
+layout_mode = 2
+
+[node name="IngredientPage" type="Panel" parent="FlowContainer/VFlowContainer" unique_id=329656489]
+custom_minimum_size = Vector2(160, 240)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_gn2fn")
+
+[node name="IngredientTitle" type="Label" parent="FlowContainer/VFlowContainer/IngredientPage" unique_id=7798372]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 43.5
+offset_top = 2.0
+offset_right = 119.5
+offset_bottom = 25.0
+label_settings = SubResource("LabelSettings_mbgkp")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="FlowContainer/VFlowContainer/IngredientPage" unique_id=998321081]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 9.999996
+offset_top = 26.0
+offset_right = 237.0
+offset_bottom = 358.8
+scale = Vector2(0.625, 0.625)
+columns = 3
+
+[node name="Container1" type="VBoxContainer" parent="FlowContainer/VFlowContainer/IngredientPage/GridContainer" unique_id=116834810]
+visible = false
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="FlowContainer/VFlowContainer/IngredientPage/GridContainer/Container1" unique_id=1886551154]
+layout_mode = 2
+text = "Broth"
+label_settings = SubResource("LabelSettings_crfqp")
+horizontal_alignment = 1
+clip_text = true
+
+[node name="btnContainer1" type="Button" parent="FlowContainer/VFlowContainer/IngredientPage/GridContainer/Container1" unique_id=1829770374]
+layout_mode = 2
+theme_override_icons/icon = ExtResource("4_jjtkn")
+icon = ExtResource("4_jjtkn")
+icon_alignment = 1
+
+[node name="CostLabel" type="Label" parent="FlowContainer/VFlowContainer/IngredientPage/GridContainer/Container1" unique_id=1362237428]
+layout_mode = 2
+text = "Cost: 1¥"
+label_settings = SubResource("LabelSettings_ft1cc")
+horizontal_alignment = 1
+
+[node name="VFlowContainer2" type="VFlowContainer" parent="FlowContainer" unique_id=1679495747]
+layout_mode = 2
+
+[node name="RecipePage" type="Panel" parent="FlowContainer/VFlowContainer2" unique_id=409725341]
+custom_minimum_size = Vector2(180, 240)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_gn2fn")
+
+[node name="ListaRecetas" type="ItemList" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=2002629805]
+visible = false
+z_index = 1
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 0
+offset_left = 2.5
+offset_top = 8.0
+offset_right = 179.5
+offset_bottom = 184.0
+
+[node name="Label" type="Label" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=1201480014]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 43.0
+offset_top = 7.0
+offset_right = 138.0
+offset_bottom = 24.0
+text = "Recipe Book"
+label_settings = SubResource("LabelSettings_0e0cb")
+horizontal_alignment = 1
+
+[node name="TotalCost" type="Label" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=1613024409]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -7.0
+offset_right = 42.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Total Cost: 0¥"
+label_settings = SubResource("LabelSettings_bwih2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bowl" type="Control" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=2121078930]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.125
+offset_top = -69.75
+offset_right = 33.125
+offset_bottom = -22.25
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(65, 47)
+
+[node name="Bowl" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=338947449]
+visible = false
+texture_filter = 1
+texture = ExtResource("3_2p410")
+centered = false
+
+[node name="Broth" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=350288985]
+visible = false
+texture_filter = 1
+texture = ExtResource("4_jjtkn")
+centered = false
+
+[node name="Noodles" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=969935019]
+visible = false
+texture_filter = 1
+texture = ExtResource("5_dsn8o")
+centered = false
+
+[node name="Veggie" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=988708950]
+visible = false
+texture_filter = 1
+texture = ExtResource("6_3fpsr")
+centered = false
+
+[node name="Egg" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=1727968820]
+visible = false
+texture_filter = 1
+texture = ExtResource("7_a3jcs")
+centered = false
+
+[node name="Protein" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=724848243]
+visible = false
+texture_filter = 1
+texture = ExtResource("8_cg688")
+centered = false
+
+[node name="Garnish" type="Sprite2D" parent="FlowContainer/VFlowContainer2/RecipePage/Bowl" unique_id=1506611057]
+visible = false
+texture_filter = 1
+texture = ExtResource("9_f0fqn")
+centered = false
+
+[node name="NameEdit" type="LineEdit" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=1363175158]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -72.5
+offset_top = -91.0
+offset_right = 73.5
+offset_bottom = -65.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = ExtResource("10_agwki")
+placeholder_text = "Basic Ramen"
+alignment = 1
+max_length = 16
+
+[node name="RamenName" type="Label" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=502568922]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -70.5
+offset_top = -73.0
+offset_right = 70.5
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Name your ramen"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=2143729849]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 67.069
+offset_right = 40.0
+offset_bottom = 107.069
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="btnErase" type="Button" parent="FlowContainer/VFlowContainer2/RecipePage/HBoxContainer" unique_id=674641931]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("10_agwki")
+text = "🗑️"
+
+[node name="btnLoad" type="Button" parent="FlowContainer/VFlowContainer2/RecipePage/HBoxContainer" unique_id=989049969]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("10_agwki")
+text = "📥"
+
+[node name="btnSave" type="Button" parent="FlowContainer/VFlowContainer2/RecipePage/HBoxContainer" unique_id=173878689]
+layout_mode = 2
+theme_override_styles/normal = ExtResource("10_agwki")
+text = "💾"
+
+[node name="LoadSubMenu" type="Panel" parent="FlowContainer/VFlowContainer2/RecipePage" unique_id=1411845575]
+visible = false
+layout_mode = 0
+offset_left = -0.3620453
+offset_right = 179.81038
+offset_bottom = 240.51724
+
+[node name="ScrollContainer" type="ScrollContainer" parent="FlowContainer/VFlowContainer2/RecipePage/LoadSubMenu" unique_id=248244584]
+layout_mode = 0
+offset_right = 187.069
+offset_bottom = 240.51724
+
+[node name="GridContainer" type="GridContainer" parent="FlowContainer/VFlowContainer2/RecipePage/LoadSubMenu/ScrollContainer" unique_id=82259753]
+layout_mode = 2
+columns = 3
+
+[connection signal="pressed" from="FlowContainer/HFlowContainer/SideTabs/VBoxContainer/tab_Bowl" to="." method="_on_tab_bowl_pressed"]
+[connection signal="pressed" from="FlowContainer/HFlowContainer/SideTabs/VBoxContainer/tab_Broth" to="." method="_on_tab_broth_pressed"]
+[connection signal="pressed" from="FlowContainer/HFlowContainer/SideTabs/VBoxContainer/tab_Noodles" to="." method="_on_tab_noodles_pressed"]
+[connection signal="text_changed" from="FlowContainer/VFlowContainer2/RecipePage/NameEdit" to="." method="_on_name_edit_text_changed"]
+[connection signal="pressed" from="FlowContainer/VFlowContainer2/RecipePage/HBoxContainer/btnErase" to="." method="_on_btn_erase_pressed"]
+[connection signal="pressed" from="FlowContainer/VFlowContainer2/RecipePage/HBoxContainer/btnLoad" to="." method="_on_btn_load_pressed"]
+[connection signal="pressed" from="FlowContainer/VFlowContainer2/RecipePage/HBoxContainer/btnSave" to="." method="_on_btn_save_pressed"]

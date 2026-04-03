@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://xrsp3l05mifm"]
+
+[ext_resource type="Shader" uid="uid://hirf2ng6li13" path="res://Shaders/Glow.gdshader" id="1_vu4ox"]
+
+[resource]
+shader = ExtResource("1_vu4ox")
+shader_parameter/glow_color = Color(1, 1, 0, 1)
+shader_parameter/speed = 2.0
+shader_parameter/intensity = 0.5
