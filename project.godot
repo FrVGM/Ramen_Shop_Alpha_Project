@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Ramen Shop Prototype"
+config/version="0.0.0.1"
+run/main_scene="uid://cbtwb50l1a1c7"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+run/low_processor_mode=true
+config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="res://Resources/default_bus_layout.tres"
+
+[autoload]
+
+GlobalLogistics="*res://Scripts/scrGlobalLogistics.gd"
+AudioManager="*uid://cen3yu5npe42c"
+
+[display]
+
+window/size/viewport_width=480
+window/size/viewport_height=480
+window/stretch/mode="canvas_items"
+
+[global_group]
+
+Customer=""
+DinnerCustomer=""
+
+[gui]
+
+theme/custom="uid://byjamx52lduwn"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+textures/decals/filter=2
+textures/light_projectors/filter=2
